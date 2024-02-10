@@ -5,8 +5,8 @@ import matplotlib.pyplot as plt
 def f(x):
     return np.exp(-2*x) + np.exp(x)
 
-# Generate x values using linspace
-x_values = np.arange(0, 4,0.0001)  # Adjust the range as needed
+# Generate x values using arange
+x_values = np.arange(0, 4,0.0001)  
 
 # Generate y values
 y_values = f(x_values)
