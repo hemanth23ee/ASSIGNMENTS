@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 # Define the function
 def f(x):
-    return 7*np.exp(2*x)/3 - np.exp(-x)/3
+    return np.exp(2*x) + np.exp(-x)
 
 # Generate x values using linspace
 x_values = np.arange(0, 3,0.0001)  # Adjust the range as needed
