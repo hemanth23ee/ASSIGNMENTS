@@ -71,15 +71,15 @@ We convert given second order differential equation to s domain using Laplace tr
 \end{align}
 For inversion of $Y(s)$ in partial fractions-
 \begin{align}
-    &\frac{b}{s+a}\Large\xleftrightarrow{\mathcal{L}^{-1}}be^{-ax}\label{inv}
+	&\frac{b}{s+a}\Large\xleftrightarrow{\mathcal{L}^{-1}}be^{-ax}u(x)\label{inv}
 \end{align}
 Where b, a are real numbers, we invert $Y(s)$ to get $y(x)$:-\\
 From \eqref{inv}
 \begin{align}
-    &Y(s)\Large\xleftrightarrow{\mathcal{L}^{-1}} y(x)
+	&Y(s)\Large\xleftrightarrow{\mathcal{L}^{-1}} y(x)u(x)
 \end{align}
 \begin{align}
-	y(x)&=e^{2x}+e^{-x}\\
+	y(x)&=\left(e^{2x}+e^{-x}\right)u(x)\\
    \Rightarrow y(1)&=7.757
 \end{align}\\
 \\
