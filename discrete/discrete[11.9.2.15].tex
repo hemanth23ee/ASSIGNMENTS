@@ -55,40 +55,59 @@
 If \( \frac{a^n +b^n}{a^{n-1} + b^{n-1}}\)is A.M between a and b, then find value of n.
 \break
 \textbf{Solution:}
-\begin{table}[h!]
-    % Change address in github
-    \input{table.tex}
-    \caption{Parameters}
-    \label{tab:12_13_3_13}
-\end{table}\\
-A.M between any two numbers a and b is average of those  numbers.\\
- We represent $a$, $b$, A.M of those two in an A.P\\
-
+Lets insert an A.M between $a$,$b$ and represent $a$, $b$, A.M of those two in an A.P\\
+The general term of A.P used is $x(n)=a+nd$. where
 \begin{align}
-    x(0)&=a\\
-    x(1)&=A.M=\frac{x(0)+x(2)}{2}\label{1} \\
-    x(2)&=b
+	\notag d&=\frac{b-a}{k+1}\{k\text{ is no of A.M's inserted between }a ,b\}\\
+	\Rightarrow d&=\frac{b-a}{2}\label{0}\\
+	x(0)&=a\label{a}\\
+	x(1)&=A.M\\
+	x(2)&=b\label{b}\\
+	\Rightarrow x(1)&=\frac{x(0)^n +x(2)^n}{x(0)^{n-1} + x(2)^{n-1}}\label{r} 
 \end{align}
-From \eqref{1}
+Take $Z$ transform of $x(n)$ after convolution with $u(n)$ as there are no $x(n)$ where n is negative.
+\begin{align}
+	x(n)*u(n)\large\xleftrightarrow{\mathcal{Z}}X(Z)\\
+	X(Z)=\frac{a}{1-z^{-1}}+\frac{dz^{-1}}{(1-z^{-1})^2}
+\end{align}
+To find x(1) we take inverse $Z$ transform using contour integration and Cauchy's residue theorm.
+\begin{align}
+	x(n)&=\frac{1}{2\pi j}\oint\,X(Z)z^{n-1}\,dz\\
+	\Rightarrow X(Z)z^{n-1}&=\frac{az}{z-1}+\frac{d\cdot z}{(z-1)^2}\label{8}\\
+\end{align}
+According to Cauchy's Residue Theorm:\\
+for a y(n) such that, N is no of poles of Y(Z)\\
+\begin{align}
+	y(n)&=\frac{1}{2\pi j}\oint\,Y(Z)\,dz=\sum\limits_{i=1}^N\text{RES}(Y,a_k)\\
+	\text{RES}(Y,a_k)&=\frac{1}{(m-1)!}\lim_{z\to a_k}\frac{d^{m-1}}{dz^{m-1}}[Y(Z)\cdot(z-a_k)^{m}]
+\end{align}
+From \eqref{8}
+\begin{align}	
+	x(1)&=\lim_{z\to1}\frac{az}{z-1}(z-1)+\lim_{z\to1}\frac{1}{1!}\frac{d}{dz}\left(\frac{d\cdot z}{(z-1)^2}(z-1)^2\right)\\
+	\Rightarrow x(1)&=a+d\\
+	\notag\text{From \eqref{0}}\\
+	\Rightarrow x(1)&=\frac{a+b}{2}\label{1}
+\end{align}
+From \eqref{r}
 \begin{align}
     \frac{x(0)^n +x(2)^n}{x(0)^{n-1} + x(2)^{n-1}}&= \frac{x(0)+x(2)}{2}  \\
     \Rightarrow x(0)^n+x(2)^n&=x(2)x(0)^{n-1}+x(0)x(2)^{n-1} \\
     \Rightarrow x(0)^{n-1}(x(0)-x(2))&=x(2)^{n-1}(x(0)-x(2))\label{2}
  \end{align}
-
-
- From \eqref{2}-
 \begin{align}
-	n
+	\Rightarrow n
 	\begin{cases}
 		=1  &\text{if } x(0)\neq x(2)\\
 		\in R &\text{if } x(0)=x(2)
 	\end{cases}
 \end{align}
-
+\begin{table}[h!]
+	\input{table.tex}
+	\caption{parameters}
+\end{table}
 \begin{figure}[h]
 \centering
-\includegraphics[width=1.5\columnwidth]{plane.png}
+\includegraphics[width=2\columnwidth]{finalplot.png}
 \caption{Plot of n in planes}
 \label{solution}
 \end{figure}
