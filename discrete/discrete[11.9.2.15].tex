@@ -55,7 +55,7 @@
 If \( \frac{a^n +b^n}{a^{n-1} + b^{n-1}}\)is A.M between a and b, then find value of n.
 \break
 \textbf{Solution:}
-Lets insert an A.M between $a$,$b$ and represent $a$, $b$, A.M of those two in an A.P\\
+We represent $a$, $b$, A.M of those two in an A.P\\
 The general term of A.P used is $x(n)=a+nd$. where
 \begin{align}
 	\notag d&=\frac{b-a}{k+1}\{k\text{ is no of A.M's inserted between }a ,b\}\\
@@ -65,15 +65,16 @@ The general term of A.P used is $x(n)=a+nd$. where
 	x(2)&=b\label{b}\\
 	\Rightarrow x(1)&=\frac{x(0)^n +x(2)^n}{x(0)^{n-1} + x(2)^{n-1}}\label{r} 
 \end{align}
-Take $Z$ transform of $x(n)$ after convolution with $u(n)$ as there are no $x(n)$ where n is negative.
+Convolution of $x(n)$ with $u(n)$.
 \begin{align}
-	x(n)*u(n)\large\xleftrightarrow{\mathcal{Z}}X(Z)\\
-	X(Z)=\frac{a}{1-z^{-1}}+\frac{dz^{-1}}{(1-z^{-1})^2}
+	x(n)*u(n)&\Large\xleftrightarrow{\mathcal{Z}}X(Z)\\
+	X(Z)&=\frac{a}{1-z^{-1}}+\frac{dz^{-1}}{(1-z^{-1})^2}\\
+	\Rightarrow X(Z)&=\frac{az}{z-1}+\frac{d\cdot z}{(z-1)^2}\label{8}
 \end{align}
-To find x(1) we take inverse $Z$ transform using contour integration and Cauchy's residue theorm.
+From contour integration method
 \begin{align}
 	x(n)&=\frac{1}{2\pi j}\oint\,X(Z)z^{n-1}\,dz\\
-	\Rightarrow X(Z)z^{n-1}&=\frac{az}{z-1}+\frac{d\cdot z}{(z-1)^2}\label{8}\\
+	\Rightarrow x(1)&=\frac{1}{2\pi j}\oint\,X(Z)\,dz
 \end{align}
 According to Cauchy's Residue Theorm:\\
 for a y(n) such that, N is no of poles of Y(Z)\\
@@ -102,12 +103,12 @@ From \eqref{r}
 	\end{cases}
 \end{align}
 \begin{table}[h!]
-	\input{tables/table.tex}
+	\input{table.tex}
 	\caption{parameters}
 \end{table}
 \begin{figure}[h]
 \centering
-\includegraphics[width=2\columnwidth]{figures/plane.png}
+\includegraphics[width=2\columnwidth]{finalplot.png}
 \caption{Plot of n in planes}
 \label{solution}
 \end{figure}
