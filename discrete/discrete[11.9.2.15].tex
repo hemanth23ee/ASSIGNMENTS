@@ -52,24 +52,28 @@
 \author{EE23BTECH11046 - Poluri Hemanth$^{*}$}
 \maketitle
 \textbf{Question:}
-If \( \frac{a^n +b^n}{a^{n-1} + b^{n-1}}\)is A.M between a and b, then find value of n.
+If \( \frac{a^n +b^n}{a^{n-1} + b^{n-1}}\)is A.M between $a$ and $b$, then find value of $n$.
 \break
 \textbf{Solution:}
+\begin{table}[h!]
+        \input{table.tex}
+        \caption{parameters}
+\end{table}
+\\
 We represent $a$, $b$, A.M of those two in an A.P\\
 The general term of A.P used is $x(n)=a+nd$. where
 \begin{align}
-	\notag d&=\frac{b-a}{k+1}\{k\text{ is no of A.M's inserted between }a ,b\}\\
-	\Rightarrow d&=\frac{b-a}{2}\label{0}\\
+	 d&=\frac{b-a}{k+1}\{k\text{ is no of A.M's inserted between }a ,b\}\\
+	 d&=\frac{b-a}{2}\label{0}\\
 	x(0)&=a\label{a}\\
 	x(1)&=A.M\\
 	x(2)&=b\label{b}\\
-	\Rightarrow x(1)&=\frac{x(0)^n +x(2)^n}{x(0)^{n-1} + x(2)^{n-1}}\label{r} 
+	x(1)&=\frac{x(0)^n +x(2)^n}{x(0)^{n-1} + x(2)^{n-1}}\label{r} 
 \end{align}
-Convolution of $x(n)$ with $u(n)$.
+Convolution of $x(n)$ with $u(n)$ and their $Z$ transform.
 \begin{align}
 	x(n)*u(n)&\Large\xleftrightarrow{\mathcal{Z}}X(Z)\\
-	X(Z)&=\frac{a}{1-z^{-1}}+\frac{dz^{-1}}{(1-z^{-1})^2}\\
-	\Rightarrow X(Z)&=\frac{az}{z-1}+\frac{d\cdot z}{(z-1)^2}\label{8}
+	X(Z)&=\frac{a}{1-z^{-1}}+\frac{dz^{-1}}{(1-z^{-1})^2}\label{7}\\
 \end{align}
 From contour integration method
 \begin{align}
@@ -77,17 +81,19 @@ From contour integration method
 	\Rightarrow x(1)&=\frac{1}{2\pi j}\oint\,X(Z)\,dz
 \end{align}
 According to Cauchy's Residue Theorm:\\
-for a y(n) such that, N is no of poles of Y(Z)\\
+For a $y(n)$ such that, \\
 \begin{align}
-	y(n)&=\frac{1}{2\pi j}\oint\,Y(Z)\,dz=\sum\limits_{i=1}^N\text{RES}(Y,a_k)\\
+	y(n)&=\frac{1}{2\pi j}\oint\,Y(Z)\,dz\\
+	&=\sum\limits_{i=1}^N\text{RES}(Y,a_k) \text{  [$N$ is no of poles of $Y(Z)$]}\\
+	\notag\text{where}\\
 	\text{RES}(Y,a_k)&=\frac{1}{(m-1)!}\lim_{z\to a_k}\frac{d^{m-1}}{dz^{m-1}}[Y(Z)\cdot(z-a_k)^{m}]
 \end{align}
-From \eqref{8}
+From \eqref{7}
 \begin{align}	
-	x(1)&=\lim_{z\to1}\frac{az}{z-1}(z-1)+\lim_{z\to1}\frac{1}{1!}\frac{d}{dz}\left(\frac{d\cdot z}{(z-1)^2}(z-1)^2\right)\\
+	x(1)&=\lim_{z\to1}\frac{a}{1-z^{-1}}(z-1)+\lim_{z\to1}\frac{1}{1!}\frac{d}{dz}\left(\frac{d\cdot z^{-1}}{(1-z^{-1})^2}(z-1)^2\right)\\
 	\Rightarrow x(1)&=a+d\\
 	\notag\text{From \eqref{0}}\\
-	\Rightarrow x(1)&=\frac{a+b}{2}\label{1}
+	 x(1)&=\frac{a+b}{2}\label{1}
 \end{align}
 From \eqref{r}
 \begin{align}
@@ -98,19 +104,17 @@ From \eqref{r}
 \begin{align}
 	\Rightarrow n
 	\begin{cases}
-		=1  &\text{if } x(0)\neq x(2)\\
-		\in R &\text{if } x(0)=x(2)
+		=1  &\text{if } a\neq b\\
+		\in R &\text{if } a=b
 	\end{cases}
 \end{align}
-\begin{table}[h!]
-	\input{table.tex}
-	\caption{parameters}
-\end{table}
-\begin{figure}[h]
-\centering
-\includegraphics[width=2\columnwidth]{finalplot.png}
-\caption{Plot of n in planes}
-\label{solution}
+\\
+\\
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=2.5\columnwidth]{final2.png}
+	\caption{Plot of n in planes}
+	\label{solution}
 \end{figure}
 
  \end{document}

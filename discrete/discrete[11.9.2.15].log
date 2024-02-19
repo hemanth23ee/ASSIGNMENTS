@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.18)  19 FEB 2024 19:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.18)  19 FEB 2024 21:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1254,45 +1254,7 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 5
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
-)
-Underfull \hbox (badness 10000) in paragraph at lines 54--60
-[]\OT1/txr/bx/n/12 Question: \OT1/txr/m/n/12 If $[]$is A.M be-tween
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 54--60
-\OT1/txr/m/n/12 a and b, then find value of n. 
- []
-
-
-Underfull \hbox (badness 3333) in paragraph at lines 54--60
-\OT1/txr/bx/n/12 Solution: \OT1/txr/m/n/12 We rep-re-sent $\OML/txmi/m/it/12 a$
-\OT1/txr/m/n/12 , $\OML/txmi/m/it/12 b$\OT1/txr/m/n/12 , A.M of those
- []
-
-
-Overfull \hbox (22.63753pt too wide) detected at line 67
-[]
- []
-
-
-LaTeX Font Warning: Command \Large invalid in math mode on input line 73.
-
-LaTeX Font Info:    Calculating math sizes for size <17> on input line 73.
-
-LaTeX Font Warning: Command \Large invalid in math mode on input line 73.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--81
-
- []
-
-
-Overfull \hbox (24.74072pt too wide) detected at line 91
-[]
- []
-
-(./table.tex
+) (./table.tex
 \gnumericTableWidth=\skip72
 \gnumericTableWidthComplete=\skip73
 \gnumericMultiRowLength=\skip74
@@ -1306,33 +1268,75 @@ Overfull \hbox (25.19937pt too wide) in paragraph at lines 154--243
  []
 
 )
-<finalplot.png, id=17, 462.528pt x 346.896pt>
-File: finalplot.png Graphic file (type png)
-<use finalplot.png>
-Package pdftex.def Info: finalplot.png  used on input line 111.
-(pdftex.def)             Requested size: 504.0pt x 378.01915pt.
+Underfull \hbox (badness 10000) in paragraph at lines 54--65
+[]\OT1/txr/bx/n/12 Question: \OT1/txr/m/n/12 If $[]$is A.M be-tween
+ []
 
-Overfull \hbox (252.0pt too wide) in paragraph at lines 111--112
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--65
+\OML/txmi/m/it/12 a$ \OT1/txr/m/n/12 and $\OML/txmi/m/it/12 b$\OT1/txr/m/n/12 ,
+ then find value of $\OML/txmi/m/it/12 n$\OT1/txr/m/n/12 . 
+ []
+
+
+Overfull \hbox (7.73625pt too wide) detected at line 72
+[]
+ []
+
+
+LaTeX Font Warning: Command \Large invalid in math mode on input line 77.
+
+LaTeX Font Info:    Calculating math sizes for size <17> on input line 77.
+
+LaTeX Font Warning: Command \Large invalid in math mode on input line 77.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--85
+
+ []
+
+
+Overfull \hbox (16.36295pt too wide) detected at line 90
+[]
+ []
+
+
+Overfull \hbox (43.91672pt too wide) detected at line 97
+[]
+ []
+
+<final2.png, id=17, 1336.995pt x 790.6338pt>
+File: final2.png Graphic file (type png)
+<use final2.png>
+Package pdftex.def Info: final2.png  used on input line 115.
+(pdftex.def)             Requested size: 630.0pt x 372.56306pt.
+
+Overfull \hbox (378.0pt too wide) in paragraph at lines 115--116
  [][] 
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \hbox (badness 10000) in paragraph at lines 110--119
+
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ] [2
 
- <./finalplot.png>]
+ <./final2.png>]
 (./discrete[11.9.2.15].aux)
 Package rerunfilecheck Info: File `discrete[11.9.2.15].out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 29696 strings out of 478287
- 585306 string characters out of 5849289
- 868218 words of memory out of 5000000
+ 29698 strings out of 478287
+ 585311 string characters out of 5849289
+ 870218 words of memory out of 5000000
  47222 multiletter control sequences out of 15000+600000
  561112 words of font info for 237 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -1347,10 +1351,10 @@ re/texlive/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/tim
 es/utmri8a.pfb>
-Output written on discrete[11.9.2.15].pdf (2 pages, 108310 bytes).
+Output written on discrete[11.9.2.15].pdf (2 pages, 171998 bytes).
 PDF statistics:
- 109 PDF objects out of 1000 (max. 8388607)
- 75 compressed objects within 1 object stream
- 24 named destinations out of 1000 (max. 500000)
+ 112 PDF objects out of 1000 (max. 8388607)
+ 78 compressed objects within 1 object stream
+ 26 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
