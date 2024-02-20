@@ -60,20 +60,19 @@ If \( \frac{a^n +b^n}{a^{n-1} + b^{n-1}}\)is A.M between $a$ and $b$, then find 
         \caption{parameters}
 \end{table}
 \\
-We represent $a$, $b$, A.M of those two in an A.P\\
-The general term of A.P used is $x(n)=a+nd$. where
+$x(n)=a+nd$. Where,
 \begin{align}
 	 d&=\frac{b-a}{k+1}\{k\text{ is no of A.M's inserted between }a ,b\}\\
-	 d&=\frac{b-a}{2}\label{0}\\
+	 &=\frac{b-a}{2}\label{0}\\
 	x(0)&=a\label{a}\\
 	x(1)&=A.M\\
 	x(2)&=b\label{b}\\
 	x(1)&=\frac{x(0)^n +x(2)^n}{x(0)^{n-1} + x(2)^{n-1}}\label{r} 
 \end{align}
-Convolution of $x(n)$ with $u(n)$ and their $Z$ transform.
+Using $Z$ transform.
 \begin{align}
 	x(n)*u(n)&\Large\xleftrightarrow{\mathcal{Z}}X(Z)\\
-	X(Z)&=\frac{a}{1-z^{-1}}+\frac{dz^{-1}}{(1-z^{-1})^2}\label{7}\\
+	X(Z)&=\frac{a}{1-z^{-1}}+\frac{dz^{-1}}{(1-z^{-1})^2}\label{8}\\
 \end{align}
 From contour integration method
 \begin{align}
@@ -84,11 +83,11 @@ According to Cauchy's Residue Theorm:\\
 For a $y(n)$ such that, \\
 \begin{align}
 	y(n)&=\frac{1}{2\pi j}\oint\,Y(Z)\,dz\\
-	&=\sum\limits_{i=1}^N\text{RES}(Y,a_k) \text{  [$N$ is no of poles of $Y(Z)$]}\\
-	\notag\text{where}\\
+	&=\sum\limits_{i=1}^N\text{RES}(Y,a_k) \text{  [$N$ is no of poles of $Y(Z)$]}\label{13}\\
+	\notag\text{where,}\\
 	\text{RES}(Y,a_k)&=\frac{1}{(m-1)!}\lim_{z\to a_k}\frac{d^{m-1}}{dz^{m-1}}[Y(Z)\cdot(z-a_k)^{m}]
 \end{align}
-From \eqref{7}
+From \eqref{8},\eqref{13}
 \begin{align}	
 	x(1)&=\lim_{z\to1}\frac{a}{1-z^{-1}}(z-1)+\lim_{z\to1}\frac{1}{1!}\frac{d}{dz}\left(\frac{d\cdot z^{-1}}{(1-z^{-1})^2}(z-1)^2\right)\\
 	\Rightarrow x(1)&=a+d\\
