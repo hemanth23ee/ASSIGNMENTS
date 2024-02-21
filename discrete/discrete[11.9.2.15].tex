@@ -59,7 +59,7 @@ If \( \frac{a^n +b^n}{a^{n-1} + b^{n-1}}\)is A.M between $a$ and $b$, then find 
         \input{table.tex}
         \caption{parameters}
 \end{table}
-\\$x(n)=a+nd$    Where,
+\\$x(n)=x(0)+n\cdot du(n)$    Where,
 \begin{align}
 	d&=\frac{b-a}{k+1},\\
 	 &=\frac{b-a}{2}\label{0}\\
@@ -86,7 +86,7 @@ For a $y(n)$ such that, \\
 From \eqref{8},\eqref{13}
 \begin{align}	
 	x(1)&=\lim_{z\to1}\frac{a}{1-z^{-1}}(z-1)+\lim_{z\to1}\frac{1}{1!}\frac{d}{dz}\left(\frac{d\cdot z^{-1}}{(1-z^{-1})^2}(z-1)^2\right)\\
-	\Rightarrow x(1)&=a+d\\
+	&=a+d\\
 	\notag\text{From \eqref{0}}\\
 	 x(1)&=\frac{a+b}{2}
 \end{align}
