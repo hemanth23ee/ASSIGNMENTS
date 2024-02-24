@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.18)  24 FEB 2024 09:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.18)  24 FEB 2024 09:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1297,16 +1297,13 @@ Package pdftex.def Info: 4.png  used on input line 94.
 
  <./4.png>]
 (./discrete[11.9.2.15].aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `discrete[11.9.2.15].out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
  29685 strings out of 478287
  585135 string characters out of 5849289
- 856166 words of memory out of 5000000
+ 856164 words of memory out of 5000000
  47219 multiletter control sequences out of 15000+600000
  561112 words of font info for 237 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -1319,7 +1316,7 @@ onts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsyc.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on discrete[11.9.2.15].pdf (1 page, 120232 bytes).
+Output written on discrete[11.9.2.15].pdf (1 page, 120233 bytes).
 PDF statistics:
  87 PDF objects out of 1000 (max. 8388607)
  58 compressed objects within 1 object stream
