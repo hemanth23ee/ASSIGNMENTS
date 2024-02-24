@@ -124,8 +124,8 @@
 
 \setlength\gnumericTableWidth{%
 	30pt+%
-	55pt+%
-	245pt+%
+	60pt+%
+	285pt+%
 0pt}
 \def\gumericNumCols{4}
 \setlength\gnumericTableWidthComplete{\gnumericTableWidth+%
@@ -146,8 +146,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \ifthenelse{\isundefined{\gnumericColA}}{\newlength{\gnumericColA}}{}\settowidth{\gnumericColA}{\begin{tabular}{@{}p{30pt*\gnumericScale}@{}}x\end{tabular}}
-\ifthenelse{\isundefined{\gnumericColB}}{\newlength{\gnumericColB}}{}\settowidth{\gnumericColB}{\begin{tabular}{@{}p{55pt*\gnumericScale}@{}}x\end{tabular}}
-\ifthenelse{\isundefined{\gnumericColC}}{\newlength{\gnumericColC}}{}\settowidth{\gnumericColC}{\begin{tabular}{@{}p{245pt*\gnumericScale}@{}}x\end{tabular}}
+\ifthenelse{\isundefined{\gnumericColB}}{\newlength{\gnumericColB}}{}\settowidth{\gnumericColB}{\begin{tabular}{@{}p{60pt*\gnumericScale}@{}}x\end{tabular}}
+\ifthenelse{\isundefined{\gnumericColC}}{\newlength{\gnumericColC}}{}\settowidth{\gnumericColC}{\begin{tabular}{@{}p{285pt*\gnumericScale}@{}}x\end{tabular}}
 
 \begin{tabular}[c]{%
 	b{\gnumericColA}%
@@ -201,7 +201,7 @@
 	\multicolumn{1}{|p{\gnumericColA}|}%
 	{\gnumericPB{\centering}\gnumbox{$\lambda$}}
 	&\multicolumn{1}{p{\gnumericColB}|}%
-	{\gnumericPB{\centering}\gnumbox{3.5m}}
+	{\gnumericPB{\centering}\gnumbox{$\frac{2\pi}{k}$}}
 	&\multicolumn{1}{p{\gnumericColC}|}%
 	{\gnumericPB{\centering}\gnumbox{Wave length of E.M wave.}}
 
@@ -212,7 +212,7 @@
 	\multicolumn{1}{|p{\gnumericColA}|}%
 	{\gnumericPB{\centering}\gnumbox{$f$}}
 	&\multicolumn{1}{p{\gnumericColB}|}%
-	{\gnumericPB{\centering}\gnumbox{$0.859\cdot10^{6}Hz$}}
+	{\gnumericPB{\centering}\gnumbox{$0.859\times10^{6}Hz$}}
 	&\multicolumn{1}{p{\gnumericColC}|}%
 	{\gnumericPB{\centering}\gnumbox{Frequency of E.M wave.}}
 
@@ -222,7 +222,7 @@
 	\multicolumn{1}{|p{\gnumericColA}|}%
 	{\gnumericPB{\centering}\gnumbox{$c$}}             
         &\multicolumn{1}{p{\gnumericColB}|}%
-	{\gnumericPB{\centering}\gnumbox{$3\cdot10^{6}m/s$}}  
+	{\gnumericPB{\centering}\gnumbox{$3\times10^{6}m/s$}}  
         &\multicolumn{1}{p{\gnumericColC}|}%
 	{\gnumericPB{\centering}\gnumbox{Velocity of propagation of E.M wave.}}
 
@@ -231,9 +231,9 @@
 	\multicolumn{1}{|p{\gnumericColA}|}%
 	{\gnumericPB{\centering}\gnumbox{$\omega$}}             
         &\multicolumn{1}{p{\gnumericColB}|}%
-        {\gnumericPB{\centering}\gnumbox{$5.4\cdot10^{6}rad/s$}}  
+        {\gnumericPB{\centering}\gnumbox{$2\pi f$}}  
         &\multicolumn{1}{p{\gnumericColC}|}%
-	{\gnumericPB{\centering}\gnumbox{Angular frequency of E..M wave.}}
+	{\gnumericPB{\centering}\gnumbox{Angular frequency of E.M wave.}}
 
 \\
 \hhline{|---|}
@@ -248,7 +248,7 @@
         \multicolumn{1}{|p{\gnumericColA}|}%
         {\gnumericPB{\centering}\gnumbox{$B_o$}}        
         &\multicolumn{1}{p{\gnumericColB}|}%
-        {\gnumericPB{\centering}\gnumbox{$1.03\cdot10^{-6}T$}}
+	{\gnumericPB{\centering}\gnumbox{$\frac{E_o}{c}$}}
         &\multicolumn{1}{p{\gnumericColC}|}%
         {\gnumericPB{\centering}\gnumbox{Amplitude of magnetic part of E.M wave }}   
 \\
@@ -259,6 +259,14 @@
         {\gnumericPB{\centering}\gnumbox{$3.1N/C$}}
         &\multicolumn{1}{p{\gnumericColC}|}%
         {\gnumericPB{\centering}\gnumbox{Amplitude of electric part of E.M wave.}}   
+\\
+\hhline{|---|}
+        \multicolumn{1}{|p{\gnumericColA}|}%
+	{\gnumericPB{\centering}\gnumbox{$\vec{e_1},\vec{e_2},\vec{e_3}$}}        
+        &\multicolumn{1}{p{\gnumericColB}|}%
+        {\gnumericPB{\centering}\gnumbox{N/A}}
+        &\multicolumn{1}{p{\gnumericColC}|}%
+        {\gnumericPB{\centering}\gnumbox{Base vectors }} 
 \\
 \hhline{|-|-|-|}
 \end{tabular}
