@@ -52,7 +52,7 @@
 \maketitle
 \textbf{Question:}
 Suppose that the electric field part of an electromagnetic wave
-in vacuum given as\\ \textbf{E} =\{(3.1N/C)cos[(1.8 rad/m)y+(5.4$\times$10$^{6}$rad/s)t]\}\^i \\
+in vacuum given as\\ \textbf{E} =\{(3.1N/C)cos[(1.8 rad/m)y+(5.4$\times$10$^{6}$rad/s)t]\}$\vec{e_1}$ \\
 (a) What is the direction of propagation ?\\
 (b) What is the wavelength ? \\
 (c) What is the frequency ?\\
@@ -62,12 +62,12 @@ in vacuum given as\\ \textbf{E} =\{(3.1N/C)cos[(1.8 rad/m)y+(5.4$\times$10$^{6}$
 \begin{table}[h!]
     % Change address in github
     \input{table1.tex}
-    \caption{Parameters}
+    \caption{Input Parameters}
     \label{tab:12.8.11}
 \end{table}\\
 (a)\\
 As the wave is in form of cos(ky+wt)
-the wave is propagating along -y axis.\\
+the wave is propagating along -y axis, represented by $\vec{e_2}$\\
 (b)
 \begin{align}
 	k&=\frac{2\pi}{\lambda} \\
@@ -93,10 +93,13 @@ where $c$ is velocity of propagation of wave which is given by
 	&= 1.03 \times 10^{-6}\label{1}
 \end{align}
 (e)
+Direction of magnetic field is $\vec{e_3}$\\
+where,
 \begin{align}
-	&\textbf{B}=B_ocos(ky+wt)(-\text{\^k})\\
+	&\vec{e_3}=\vec{e_2} \times \vec{e_1}\\
+	&\textbf{B}=B_ocos(ky+wt)\vec{e_3}\\
 	&\notag\text{From \eqref{1}}\\
-	&\textbf{B}=1.03\times10^{-6}T\{cos[(1.8rad/m)y+(5.4x10^{6}rad/s)t]\}(\text{-\^k})
+	&\textbf{B}=1.03\times10^{-6}T\{cos[(1.8rad/m)y+(5.4x10^{6}rad/s)t]\}\vec{e_3}
 \end{align}
 \begin{figure}[h]
 \centering
