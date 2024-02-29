@@ -51,7 +51,7 @@
 \author{EE23BTECH11046 - Poluri Hemanth$^{*}$}
 \maketitle
 \textbf{Question:}
-Consider the differential equation \\$\frac{d^2y}{dx^2}+8\frac{dy}{dx}+16y=0$ and the boundary conditions $y(0)=1$ and $\frac{dy}{dx}(0)=0$. The solution to equation is:
+Consider the differential equation \\$\frac{d^2y}{dx^2}+8\frac{dy}{dx}+16y=0$ and the boundary conditions $y(0)=1$ and $\frac{dy}{dx}(0)=0$. The solution to equation is:\\
 \textbf{Solution:}\\
 \begin{table}[h!]
     % Change address in github
@@ -59,10 +59,13 @@ Consider the differential equation \\$\frac{d^2y}{dx^2}+8\frac{dy}{dx}+16y=0$ an
         \caption{Parameters}
         \label{tab:es.47}
 \end{table}\\
-We use Laplace transorm in order to find solution of a second order differential equation
 \begin{align}
-	\frac{d^2y}{dx^2}+8\frac{dy}{dx}+16y&\Large\xleftrightarrow{\mathcal{L}}s^2Y(s)-sy(0)-y'(0)+8sY(s)-8y(0)+16Y(s)\\
-	Y(s)(s^2+8s+16)&=s+8\\
+	\frac{d^2y}{dx^2}+8\frac{dy}{dx}+16y&\Large\xleftrightarrow{\mathcal{L}}s^2Y(s)-sy(0)-y'(0)+8sY(s)-8y(0)+16Y(s)
+\end{align}
+\begin{align}
+	Y(s)(s^2+8s+16)&=s+8
+\end{align}
+\begin{align}
 	\Rightarrow Y(s)&=\frac{s+8}{s^2+8s+16}\\
 	&=\frac{1}{s+4}+\frac{4}{(s+4)^2}\label{1ae.1}
 \end{align}
@@ -70,23 +73,15 @@ For inversion of $Y(s)$ in partial fractions-
 \begin{align}
 	&\frac{b}{(s+a)^n}\Large\xleftrightarrow{\mathcal{L}^{-1}}\frac{b}{(n-1)!}\cdot x^{n-1} e^{-ax}\cdot u(x)\label{invae.1}
 \end{align}
-Where b, a are real numbers, we invert $Y(s)$ to get $y(x)$:-\\
-\begin{align}
-        &Y(s)\Large\xleftrightarrow{\mathcal{L}^{-1}} y(x)
-\end{align}
-From \eqref{1ae.1},\eqref{invae.1}
+\\
+Applying Laplace inverse-\\
+\\From \eqref{1ae.1},\eqref{invae.1}
 \begin{align}
 	y(x)&=\frac{1}{0!} e^{-4x}\cdot u(x)+\frac{4}{1!}x\cdot e^{-4x}\cdot u(x)\\
 	&=(1+4x)e^{-4x}u(x)
 \end{align}
-\\
-\\
-\\
-\\
-\\
-\\
-\\
-\begin{figure}
+\newpage
+\begin{figure}[h!]
     \centering
     \includegraphics[width=1\linewidth]{figure.png}
         \caption{Plot of y(x)}
