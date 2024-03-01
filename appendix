@@ -1,1 +1,13 @@
-
+\begin{enumerate}[label=\thechapter.\arabic*,ref=\thechapter.\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\numberwithin{table}{enumi}
+\item Laplace transform of nth order derivative of y(t) is\\
+  \begin{align}
+    y^{(n)}\system{L}s^nY(s)-\sum\limits_{k=0}^{n-1}s^{(n-1-k)}y^{(k)}(0)\label{lap (derivatives)}
+  \end{align}
+\item The Inverse Laplace for partial fractions is as follows\\
+    \begin{align}
+       &\frac{b}{(s+a)^n}\Large\xleftrightarrow{\mathcal{L}^{-1}}\frac{b}{(n-1)!}\cdot t^{n-1} e^{-at}\cdot u(t)\label{inv lap (partial fractions)}
+    \end{align}
+\end{enumerate}
