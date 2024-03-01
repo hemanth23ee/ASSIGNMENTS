@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.18)  1 MAR 2024 18:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.18)  1 MAR 2024 18:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1267,95 +1267,95 @@ Overfull \hbox (5.59998pt too wide) in paragraph at lines 152--246
 
 )
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 65.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 66.
 
-LaTeX Font Info:    Calculating math sizes for size <17> on input line 65.
+LaTeX Font Info:    Calculating math sizes for size <17> on input line 66.
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 65.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 66.
 
 
-Overfull \hbox (66.28896pt too wide) detected at line 65
+Overfull \hbox (66.28896pt too wide) detected at line 66
 []
  []
 
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 76.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 77.
 
 
-LaTeX Font Warning: Command \Large invalid in math mode on input line 76.
+LaTeX Font Warning: Command \Large invalid in math mode on input line 77.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--79
+Underfull \hbox (badness 10000) in paragraph at lines 77--80
 
  []
 
 <figure1.png, id=12, 462.528pt x 346.896pt>
 File: figure1.png Graphic file (type png)
 <use figure1.png>
-Package pdftex.def Info: figure1.png  used on input line 109.
+Package pdftex.def Info: figure1.png  used on input line 110.
 (pdftex.def)             Requested size: 252.0pt x 189.00427pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--113
+Underfull \hbox (badness 10000) in paragraph at lines 93--114
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--113
+Underfull \hbox (badness 10000) in paragraph at lines 93--114
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--113
+Underfull \hbox (badness 10000) in paragraph at lines 93--114
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--113
+Underfull \hbox (badness 10000) in paragraph at lines 93--114
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--113
+Underfull \hbox (badness 10000) in paragraph at lines 93--114
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--113
+Underfull \hbox (badness 10000) in paragraph at lines 93--114
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--113
+Underfull \hbox (badness 10000) in paragraph at lines 93--114
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--113
+Underfull \hbox (badness 10000) in paragraph at lines 93--114
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--113
+Underfull \hbox (badness 10000) in paragraph at lines 93--114
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--113
+Underfull \hbox (badness 10000) in paragraph at lines 93--114
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--113
+Underfull \hbox (badness 10000) in paragraph at lines 93--114
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--113
+Underfull \hbox (badness 10000) in paragraph at lines 93--114
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--113
+Underfull \hbox (badness 10000) in paragraph at lines 93--114
 
  []
 
@@ -1383,7 +1383,7 @@ fonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on gate4.pdf (1 page, 68456 bytes).
+Output written on gate4.pdf (1 page, 68226 bytes).
 PDF statistics:
  81 PDF objects out of 1000 (max. 8388607)
  59 compressed objects within 1 object stream
