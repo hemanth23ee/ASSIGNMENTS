@@ -7,21 +7,24 @@
         f(t)u(t)\system{L}&\int_{0}^{\infty}f(t)e^{-st}\; dt\\
         &=F(s)\label{lap transform}
 \end{align}
-\item Laplace transform of powers of $t$\\ 
+\item Laplace transform of powers of $t$\\
         Let $f(t)=t^nu(t)$\\
-From \eqref{lap transform},$h=st$
+From \eqref{lap transform},and considering $h=st$
 \begin{align}
         F(s)&=\frac{1}{s^{n+1}}\int_{0}^{\infty}h^ne^{-h}\;dh\label{lap 1}\\
-        (n-1)!&=\int_0^\infty e^{-t}t^{n-1}\;dt\text{ (Gamma function)}\label{gamma}\\
-        \Rightarrow F(s)&=\frac{n!}{s^{n+1}}\\
-        \Rightarrow t^nu(t)&\system{L}\frac{n!}{s^{n+1}}\label{lap exp}
+        (n-1)!&=\int_0^\infty e^{-t}t^{n-1}\;dt\text{ (Gamma function)}\label{gamma}
+\end{align}
+From \eqref{lap 1},\eqref{gamma}
+\begin{align}
+        F(s)&=\frac{n!}{s^{n+1}}\\
+         t^nu(t)&\system{L}\frac{n!}{s^{n+1}}\label{lap exp}
 \end{align}
 \item Frequency shift property:\\
         Let $f(t)=y(t)e^{-at}u(t)$\\
 From\eqref{lap transform},
 \begin{align}
         F(s)&=\int_0^{\infty}y(t)e^{-(s+a)t}\;dt\\
-        \Rightarrow y(t)e^{-at}u(t)&\system{L}Y(s+a)\label{lap freq shift}
+         y(t)e^{-at}u(t)&\system{L}Y(s+a)\label{lap freq shift}
 \end{align}
 \item Inverse Laplace for partial fractions\\
 From \eqref{lap exp},\eqref{lap freq shift} we get
