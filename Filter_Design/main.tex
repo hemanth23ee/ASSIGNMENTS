@@ -37,6 +37,9 @@ We are supposed to design the equivalent FIR and IIR filter realizations for giv
 This is a bandpass filter whose specifications are available below.
 
 \section{Filter Specifications}
+The sampling rate for the filter has been specified as $F_s =  48$ kHz.	If the un-normalized  discrete-time (natural) frequency is F, the corresponding normalized digital filter (angular) frequency is given by $\omega = 2\pi
+\left(\frac{F}{F_s}\right)$.
+
 \subsection{The Digital Filter}
 \begin{enumerate}
 \item {Passband:}
@@ -137,8 +140,8 @@ N \geq \left\lceil \frac{\cosh^{-1}\sqrt{D_2/D_1}}{\cosh^{-1}\Omega_{Ls}} \right
 \end{eqnarray}
 where $D_1 = \frac{1}{(1 - \delta)^2}-1$ and $D_2 = \frac{1}{\delta^2} - 1$ and $\left \lceil . \right \rceil$ is known as the ceiling operator . 
 \input{tables/filter_design_tab}
-we get $N\geq 4$ and $0.278 \leq \epsilon \leq 0.61$\\
-\newpage
+we get $N\geq 4$ and $0.28 \leq \epsilon \leq 0.61$\\
+
 The below code plots \eqref{eq:mag_freq_response} for different values of $\epsilon$ .
 \begin{lstlisting}
 https://github.com/hemanth23ee/ASSIGNMENTS/blob/main/Filter_Design/codes/plot1.py
@@ -146,7 +149,7 @@ https://github.com/hemanth23ee/ASSIGNMENTS/blob/main/Filter_Design/codes/plot1.p
 \begin{figure}[H]
 \centering
 \includegraphics[width=1\columnwidth]{figs/plot1.png}
-\caption{The Analog Low-Pass Frequency Response for $0.278  \leq \epsilon \leq 0.61$}
+\caption{The Analog Low-Pass Frequency Response for $0.28  \leq \epsilon \leq 0.61$}
 \label{fig:H_for_diff_eb}
 \end{figure}
 
@@ -283,7 +286,7 @@ The lowpass filter has a passband frequency $\omega_l$ and transition band $\Del
 The stopband tolerance is $\delta=0.15$.The cutoff-frequency is given by :
 \begin{align}
     \omega_{l} &= \frac{B}{2}\\
-                &= 0.025\pi
+                &= 0.066\pi
 \end{align}
 \begin{figure}[H]
 \centering
@@ -368,19 +371,19 @@ A Band-Pass Filter (BPF) can be obtained by subtracting the magnitude response o
 \begin{align}
     h_{BP}\brak{n} = 
 \begin{cases} 
-    \frac{\sin(w_{p2} n)}{n\pi} -\frac{\sin\brak{\omega_{p1}n}}{n\pi},  & \text{for } n\neq 0\\\
+    \frac{\sin(\omega_{p2} n)}{n\pi} -\frac{\sin\brak{\omega_{p1}n}}{n\pi},  & \text{for } n\neq 0\\
     \frac{\omega_{p2}-\omega_{p1}}{\pi} &\text{for} n= 0
 \end{cases} 
 \end{align}
 \begin{align}
      \frac{\sin(\omega_{p2} n)}{n\pi} -\frac{\sin\brak{\omega_{p1}n}}{n\pi} &= \frac{2\cos{\brak{\frac{\omega_{p2}n+\omega_{p1}n}{2}}}\sin{\brak{\frac{\omega_{p2}n-\omega_{p1}n}{2}}}}{n\pi}\\
-            &= \frac{2\cos{\brak{0.2225n\pi}}\sin{\brak{0.025n\pi}}}{n\pi}
+            &= \frac{2\cos{\brak{0.435n\pi}}\sin{\brak{0.025n\pi}}}{n\pi}
 \end{align}
 Multipying by window function we get :
 \begin{align}
     h_{BP}\brak{n} = 
 \begin{cases} 
-   \frac{2\cos{\brak{0.2225n\pi}}\sin{\brak{0.025n\pi}}}{n\pi},  & \text{for } -48\leq n \leq 48 \\
+   \frac{2\cos{\brak{0.435n\pi}}\sin{\brak{0.025n\pi}}}{n\pi},  & \text{for } -48\leq n \leq 48 \\
     0 &\text{otherwise}
 \end{cases} 
 \end{align}
